@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        style="@style/layout">
+
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+        <EditText
+                android:id="@+id/etxtWord"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                android:imeActionLabel="@string/search"
+                android:layout_weight="1"
+                style="@style/editText"
+                android:hint="输入菜鸟通行证查找"/>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="4"
+                style="@style/smallGreenButton"
+                android:onClick="query"
+                android:text="@string/search"/>
+     </LinearLayout>
+
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_find_more_friend_mobile"
+            android:layout_marginTop="20dp"
+            style="@style/prf_item_for_text"
+            android:text="@string/friend_find_from_contact"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_find_more_friend_qq"
+            android:layout_marginTop="1dp"
+            style="@style/prf_item_for_text"
+            android:text="@string/friend_find_from_qq"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_find_more_friend_scan"
+            android:layout_marginTop="1dp"
+            style="@style/prf_item_for_text"
+            android:text="@string/friend_find_from_scan"/>
+
+
+
+
+
+</LinearLayout>

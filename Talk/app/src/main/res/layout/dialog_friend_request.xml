@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/basicPaddingSize"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="400dp"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_dialog_common"
+            >
+
+
+        <EditText
+                android:id="@+id/etxtMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/who_i_am"
+                style="@style/editText"
+                />
+
+
+        <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/close"
+                    style="@style/bigRedButton"/>
+
+
+            <Button
+                    android:id="@+id/btnYes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="@string/send"
+                    style="@style/bigGreenButton"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

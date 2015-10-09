@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/selector_list_item">
+
+
+
+    <ImageView
+            android:id="@+id/imageviewHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            />
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageviewHead"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_title"
+                    />
+
+
+            <TextView
+                    android:id="@+id/txtMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_normal"
+                    />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <TextView
+            android:id="@+id/txtHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/text_sub"
+            android:visibility="gone"
+            />
+    <Button
+            android:id="@+id/btnHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:text="@string/agree"
+            style="@style/smallGreenButton"/>
+
+
+</RelativeLayout>
