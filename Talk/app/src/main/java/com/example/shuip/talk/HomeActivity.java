@@ -181,15 +181,4 @@ public class HomeActivity extends BaseActivity implements ActionBar.TabListener,
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d(TAG,"onstop");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(TAG,"ondestroy");
-    }
 }
